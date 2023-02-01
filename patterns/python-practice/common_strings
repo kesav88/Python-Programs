@@ -1,0 +1,16 @@
+class Solution:
+    def longestCommonSubsequence(self, text1,text2):
+        count=0
+        A=text1
+        B=text2
+        for i in A:
+            for j in  B:
+                if i==j:
+                    count += 1
+        return count
+
+
+text1="kesava"
+text2="knu"
+kesava=Solution()
+print(kesava.longestCommonSubsequence(text1,text2))
